@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Оформлення замовлення</h1>
+		<form id="form">
+			<div class="form__box">
+				<label for="recipient-name">Ім'я отримувача:</label>
+				<input type="text" id="recipient-name" required />
+			</div>
+			<div class="form__box">
+				<label for="recipient-phone">Телефон отримувача:</label>
+				<input type="tel" id="recipient-phone" required />
+			</div>
+			<div class="form__box">
+				<label for="recipient-adress">Адреса отримувача:</label>
+				<input type="text" id="recipient-adress" required />
+			</div>
+			<button type="submit">Відправити замовлення</button>
+			<p class="input-message"></p>
+		</form>
+		<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+		<script src="ApiRequestNewDelivery.js"></script>
+	</body>
+</html>
